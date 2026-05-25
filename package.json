@@ -1,0 +1,39 @@
+{
+	"name": "rolldown-inline-type-exports-monorepo",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Monorepo for @repobuddy/rolldown-inline-type-exports",
+	"license": "MIT",
+	"scripts": {
+		"build": "turbo run build",
+		"check": "biome check",
+		"check:fix": "biome check --write",
+		"clean": "turbo run clean",
+		"cs": "changeset",
+		"knip": "knip",
+		"lint": "biome check",
+		"nuke": "run-s nuke:pkgs nuke:root",
+		"nuke:pkgs": "turbo run nuke",
+		"nuke:root": "rimraf node_modules",
+		"prepare": "husky",
+		"release": "changeset publish",
+		"plugin": "pnpm --filter=@repobuddy/rolldown-inline-type-exports",
+		"test": "turbo run test",
+		"verify": "run-p knip verify:pkgs",
+		"verify:pkgs": "turbo run verify",
+		"version": "changeset version"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.15",
+		"@changesets/cli": "^2.29.8",
+		"@commitlint/cli": "^21.0.0",
+		"@commitlint/config-conventional": "^21.0.0",
+		"@repobuddy/biome": "2.3.1",
+		"husky": "^9.1.7",
+		"knip": "^6.0.0",
+		"npm-run-all2": "^9.0.0",
+		"rimraf": "~6.1.0",
+		"turbo": "^2.3.3"
+	},
+	"packageManager": "pnpm@11.3.0"
+}

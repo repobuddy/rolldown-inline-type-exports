@@ -1,0 +1,24 @@
+{
+	"$schema": "https://turborepo.org/schema.json",
+	"tasks": {
+		"build": {
+			"dependsOn": ["^build"],
+			"inputs": ["src/**", "*.ts", "package.json", "tsconfig*.json"],
+			"outputs": ["dist/**"]
+		},
+		"clean": {
+			"cache": false
+		},
+		"test": {
+			"dependsOn": ["^build"],
+			"outputs": ["coverage/**"]
+		},
+		"verify": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**", "coverage/**"]
+		},
+		"nuke": {
+			"cache": false
+		}
+	}
+}

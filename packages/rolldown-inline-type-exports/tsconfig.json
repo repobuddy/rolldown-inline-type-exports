@@ -1,0 +1,4 @@
+{
+	"extends": "@repobuddy/typescript/tsconfig/monorepo.json",
+	"include": ["src", "tsdown.config.ts", "vitest.config.ts"]
+}

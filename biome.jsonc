@@ -1,0 +1,29 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"extends": ["@repobuddy/biome/recommended"],
+	"files": {
+		"includes": ["!.turbo", "!**/coverage", "!**/dist", "!**/node_modules"]
+	},
+	"javascript": {
+		"formatter": {
+			"arrowParentheses": "asNeeded",
+			"indentStyle": "tab",
+			"lineWidth": 110,
+			"quoteStyle": "single",
+			"semicolons": "asNeeded",
+			"trailingCommas": "none"
+		}
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.spec.ts"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noExplicitAny": "off"
+					}
+				}
+			}
+		}
+	]
+}
