@@ -1,0 +1,13 @@
+# commit-work local augmentation
+
+## Auto-commit rule
+
+In this repo, commit each unit of work immediately when it is complete
+and verified — do not wait for the user to ask.
+
+A unit is complete when:
+- All files for that concern are written/edited
+- Tests pass (pre-commit hook or manual verify)
+
+Commit, then continue to the next unit. Never finish multiple units
+before committing.

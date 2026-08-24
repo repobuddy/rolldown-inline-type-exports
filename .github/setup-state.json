@@ -1,0 +1,77 @@
+{
+	"repo": "repobuddy/rolldown-inline-type-exports",
+	"defaultBranch": "main",
+	"current": {
+		"deleteBranchOnMerge": false,
+		"allowAutoMerge": false,
+		"allowMergeCommit": true,
+		"allowSquashMerge": true,
+		"allowRebaseMerge": true,
+		"allowUpdateBranch": false,
+		"hasWiki": true,
+		"hasProjects": true,
+		"hasDiscussions": false,
+		"dependabotSecurityUpdates": "disabled",
+		"secretScanning": "disabled",
+		"secretScanningPushProtection": "disabled",
+		"defaultBranchRuleset": null
+	},
+	"detected": {
+		"language": "typescript",
+		"codeqlLanguage": "javascript",
+		"packageManager": "pnpm",
+		"hasPackageJson": true,
+		"hasDependabotConfig": false,
+		"existingWorkflows": ["pull-request.yml", "release.yml"]
+	},
+	"rows": [
+		{
+			"setting": "delete_branch_on_merge",
+			"current": "false",
+			"target": "true",
+			"action": "will set"
+		},
+		{
+			"setting": "allow_auto_merge",
+			"current": "false",
+			"target": "true",
+			"action": "will set"
+		},
+		{
+			"setting": "allow_merge_commit",
+			"current": "true",
+			"target": "false",
+			"action": "will set"
+		},
+		{
+			"setting": "allow_squash_merge",
+			"current": "true",
+			"target": "true",
+			"action": "already set"
+		},
+		{
+			"setting": "allow_rebase_merge",
+			"current": "true",
+			"target": "true",
+			"action": "already set"
+		},
+		{
+			"setting": "allow_update_branch",
+			"current": "false",
+			"target": "true",
+			"action": "will set"
+		},
+		{
+			"setting": "dependabot_security_updates",
+			"current": "disabled",
+			"target": "enabled",
+			"action": "will set"
+		},
+		{
+			"setting": "default branch ruleset",
+			"current": "none",
+			"target": "default-branch-protection",
+			"action": "will create"
+		}
+	]
+}
